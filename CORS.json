@@ -1,0 +1,15 @@
+[
+    {
+        "AllowedHeaders": [
+            "Authorization"
+        ],
+        "AllowedMethods": [
+            "GET"
+        ],
+        "AllowedOrigins": [
+            "<url-of-s3-bucket>"
+        ],
+        "ExposedHeaders": [],
+        "MaxAgeSeconds": 3000
+    }
+]
