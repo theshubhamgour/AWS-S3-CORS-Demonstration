@@ -7,9 +7,10 @@
             "GET"
         ],
         "AllowedOrigins": [
-            "<url-of-s3-bucket>"
+            "http://theshubhamgour-bucketv11.s3-website.us-east-2.amazonaws.com"
         ],
-        "ExposedHeaders": [],
+        "ExposeHeaders": [],
         "MaxAgeSeconds": 3000
     }
 ]
+
