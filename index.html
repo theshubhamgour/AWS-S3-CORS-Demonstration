@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CORS Example</title>
+    <title>AWS S3 CORS Demonstration</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -28,6 +28,19 @@
 
         h1 {
             color: #333;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #555;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
             margin-bottom: 20px;
         }
 
@@ -71,8 +84,13 @@
 </head>
 <body>
     <div class="container">
-        <h1>CORS Example</h1>
-        <button id="fetchData">Fetch Data from Server</button>
+        <h1>AWS S3 CORS Demonstration</h1>
+        <p>This is an example of how to fetch data from AWS S3 using CORS configuration.</p>
+        
+        <!-- Image Example -->
+        <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/0*7VvsKBnEDa_BsQ6k" alt="AWS S3 CORS Demonstration">
+
+        <button id="fetchData">Fetch Data from S3</button>
         <div id="result"></div>
     </div>
 
@@ -81,7 +99,7 @@
             const resultDiv = document.getElementById('result');
             resultDiv.innerHTML = '<div class="loading"></div>Loading...';
 
-            fetch('http://localhost:3000/data')
+            fetch('data.json')
                 .then(response => response.json())
                 .then(data => {
                     resultDiv.innerHTML = data.message;
